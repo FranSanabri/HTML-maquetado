@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
+  <title>American Express</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #4285f4;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .header {
+      background-color: transparent;
+      color: white;
+      padding: 10px;
+      text-align: right;
+    }
+    .publicidad {
+      color: white;
+      padding: 5px 10px;
+      border-radius: 0;
+      margin: 10px;
+    }
+    .problemas-sesion {
+      color: white;
+      font-size: 14px;
+      margin: 10px;
+    }
+    .container-box {
+      background-color: white;
+      border-radius: 0;
+      margin: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+    .amex-logo {
+      max-width: 150px;
+      margin-top: 20px;
+    }
+    .nombre {
+      text-align: left;
+      margin-left: 20px;
+    }
+    .banner-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .banner {
+      width: 100%;
+      object-fit: cover;
+      max-height: 300px;
+      margin: 0 auto;
+    }
+    .blue-banner {
+      background-color: #0047B3;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 24px;
+      width: 100%;
+      line-height: 1.5;
+    }
+    .blue-text {
+      color: #0047B3;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 24px;
+      line-height: 1.5;
+    }
+    .gray-banner {
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: left;
+      font-size: 24px;
+      color: #000000;
+    }
+    .contact-text {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #0047B3;
+      text-align: center;
+      width: 100%;
+    }
+    .contact-text p {
+      margin-bottom: 20px;
+    }
+    .icon-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #66a3ff;
+  }
+
+  .icon-column {
+    width: 20%; /* Asegura que haya un 20% de ancho para cada icono */
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin: 10px;
+  }
+    .icon-name {
+      font-size: 14px;
+      margin-top: 5px;
+      text-align: center;
+    }
+    .facebook-icon {
+      font-size: 40px;
+      color: #999999;
+      margin-top: 20px;
+      text-align: center;
+      width: 100%;
+    }
+    .hr-line {
+      margin: 20px auto;
+      width: 100%;
+    }
+    .small-banner {
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+    }
+    .small-banner img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 576px) {
+    .container-box {
+      margin: 10px;
+    }
+    .icon-row {
+      font-size: 20px;
+    }
+    .icon-name {
+      font-size: 14px;
+    }
+    .facebook-icon {
+      font-size: 30px;
+    }
+    .blue-banner, .gray-banner {
+      padding: 15px;
+      font-size: 18px;
+    }
+    .contact-text p {
+      font-size: 16px;
+    }
+    .hr-line {
+      margin: 15px auto;
+    }
+    .small-text {
+      font-size: 12px;
+      margin: 10px auto;
+    }
+  }
+  </style>
+</head>
+<body>
+  <table class="header">
+    <tr>
+      <td style="float: left;">
+        <div class="publicidad">PUBLICIDAD</div>
+      </td>
+      <td>
+        <div class="problemas-sesion">¿Problemas para iniciar sesión? <a href="#" style="color: white;">Haz click aquí</a></div>
+      </td>
+    </tr>
+  </table>
+  <table class="container-box">
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td class="col-md-12 text-left">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_(2018).svg/1200px-American_Express_logo_(2018).svg.png" alt="American Express Logo" class="amex-logo" style="margin-left: 20px;">
+            </td>
+          </tr>
+        </table>
+        <hr>
+        <table class="row mt-3 nombre">
+          <tr>
+            <td class="col-md-12">
+              <h1>Hola &lt;nombre&gt;</h1>
+            </td>
+          </tr>
+        </table>
+        <table class="row mt-4">
+          <tr>
+            <td class="col-md-4">
+              <h2>Mis viajes</h2>
+            </td>
+            <td class="col-md-4">
+              <h2>Mis Bienes</h2>
+            </td>
+            <td class="col-md-4">
+              <button class="btn btn-primary">MI CUENTA</button>
+            </td>
+          </tr>
+        </table>
+        <table class="banner-container">
+          <tr>
+            <td>
+              <img src="https://i.ibb.co/jG0pXYx/banner.png" alt="Banner" class="img-fluid banner">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table class="blue-banner">
+                <tr>
+                  <td>
+                    <p>Estés donde estés, hagas lo que hagas, te respaldamos</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table class="gray-banner">
+                <tr>
+                  <td>
+                <p class="blue-text">Tu tranquilidad es lo más importante.</p>
+                <p>Al contratar un seguro o un servicio de asistencia al viajero a través de American Express, no solo estás eligiendo la protección de prestigiosas compañías seleccionadas por nosotros. También cuentas con la tranquilidad de obtener atención personalizada en nuestra unidad de servicio de atención especializada en seguros.</p>
+           </td> 
+           </tr>
+             </table>
+            </td>
+          </tr>
+        </table>
+        <table class="contact-text">
+          <tr>
+            <td>
+              <p>Estamos a tu disposición para atender de manera exclusiva cualquier consulta o inquietud sobre los seguros y los servicios de asistencia en viajes que tengas o desees contratar a través de American Express.</p>
+              <p>Te invitamos a comunicarte al 0810-888-SEG (7348), de lunes a viernes de 9 a 20 horas para responder tus consultas y para adquirir las siguientes coberturas exclusivas:</p>
+            </td>
+          </tr>
+        </table>
+        <table class="icon-row">
+          <tr>
+            <td class="icon-column">
+              <i class="fas fa-plane"></i> <!-- Avión -->
+              <div class="icon-name">Asistencia al viajero</div>
+            </td>
+            <td class="icon-column">
+              <i class="fas fa-heart"></i> <!-- Corazón -->
+              <div class="icon-name">Vida</div>
+            </td>
+            <td class="icon-column">
+              <i class="fas fa-car"></i> <!-- Auto -->
+              <div class="icon-name">Auto</div>
+            </td>
+            <td class="icon-column">
+              <i class="fas fa-home"></i> <!-- Casa -->
+              <div class="icon-name">Hogar</div>
+            </td>
+            <td class="icon-column">
+              <i class="fas fa-suitcase"></i> <!-- Maleta -->
+              <div class="icon-name">Protección en Movimiento</div>
+            </td>
+          </tr>
+        </table>
+        <table class="blue-banner" style="background-color: #0047B3; text-align: center;">
+          <tr>
+            <td style="color: white;">Comunícate al 0810-888-SEGU (7348)<br>de lunes a viernes de 9 a 20 horas</td>
+          </tr>
+        </table>
+        <table class="facebook-icon">
+          <tr>
+            <td>
+              <i class="fab fa-facebook"></i> <!-- Icono de Facebook -->
+            </td>
+          </tr>
+        </table>
+        <table class="hr-line">
+          <tr>
+            <td>
+              <hr>
+            </td>
+          </tr>
+        </table>
+        <table class="small-banner">
+          <tr>
+            <td>
+              <img src="https://i.ibb.co/YLxpxgf/no-viva-la-vida.png" alt="Imagen pequeña">
+            </td>
+          </tr>
+        </table>
+        <table class="contact-text">
+          <tr>
+            <td>
+              <p>Privacidad | Contacto | Actualizar contacto | Desuscribirse</p>
+            </td>
+          </tr>
+        </table>
+        <table class="hr-line">
+          <tr>
+            <td>
+              <hr>
+            </td>
+          </tr>
+        </table>
+        <table class="small-text" style="text-align: center; margin: 20px auto;">
+          <tr>
+            <td>
+              AMERICAN EXPRESS OFRECE LOS PRODUCTOS EMITIDOS POR LAS COMPAÑÍAS ASEGURADORAS ALIADAS (DISPONIBLES EN WWW.AMERICANEXPRESS.COM.AR/SEGUROSYSERVICIOS) EN SU CARÁCTER DE AGENTE INSTITORIO, INSCRIPTO EN LA SUPERINTENDENCIA DE SEGUROS DE LA NACIÓN (SSN) BAJO N° 92. TELÉFONO SSN 0800-666-8400, WWW.ARGENTINA.GOB.AR/SSN.
+              <br><br>
+              LOS DATOS PERSONALES SON ALMACENADOS EN UNA BASE DE DATOS, CUYO RESPONSABLE ES AMERICAN EXPRESS ARGENTINA S.A. CON DOMICILIO LEGAL EN ARENALES 707, ENTREPISO, CP C1061AAA, C.A.B.A. USTED PODRÁ -EN CUALQUIER MOMENTO- SOLICITAR EL RETIRO O BLOQUEO DE SU NOMBRE, TOTAL O PARCIAL, DE NUESTRA BASE DE DATOS Y PODRÁ SOLICITAR INFORMACIÓN ACERCA DEL NOMBRE DEL RESPONSABLE O USUARIO DE LA BASE DE DATOS QUE PROVEYÓ SU INFORMACIÓN.
+              <br><br>
+              LEY 25.326 ART.27. - INC. 3. “EL TITULAR PODRÁ EN CUALQUIER MOMENTO SOLICITAR EL RETIRO O BLOQUEO DE SU NOMBRE DE LOS BANCOS DE DATOS A LOS QUE SE REFIERE EL PRESENTE ARTÍCULO”. DECRETO 1558/01 - ART. 27. - 3ER. PÁRRAFO. “EN TODA COMUNICACIÓN CON FINES DE PUBLICIDAD QUE SE REALICE POR CORREO, TELÉFONO, CORREO ELECTRÓNICO, INTERNET U OTRO MEDIO A DISTANCIA A CONOCER, SE DEBERÁ INDICAR, EN FORMA EXPRESA Y DESTACADA, LA POSIBILIDAD DEL TITULAR DEL DATO DE SOLICITAR EL RETIRO O BLOQUEO, TOTAL O PARCIAL, DE SU NOMBRE DE LA BASE DE DATOS. A PEDIDO DEL INTERESADO, SE DEBERÁ INFORMAR EL NOMBRE DEL RESPONSABLE O USUARIO DEL BANCO DE DATOS QUE PROVEYÓ LA INFORMACIÓN”.
+              <br><br>
+              INSTRUCCIONES PARA CANCELAR LA SUSCRIPCIÓN: ESTE CORREO ELECTRÓNICO PUBLICITARIO ESTÁ DESTINADO A RESIDENTES DE ARGENTINA Y FUE ENVIADO A <*email*>. SI HA SIDO RECIBIDO EN UNA DIRECCIÓN DIFERENTE, SIGNIFICA QUE FUE REENVIADO. SI NO DESEA RECIBIR NUEVOS MENSAJES PUBLICITARIOS EN EL FUTURO, POR FAVOR RESPONDA ESTE E-MAIL CON LA PALABRA “BORRAR” EN EL ASUNTO (SUBJECT), O VISITE LAS PREFERENCIAS DE CORREO ELECTRÓNICO EN EL SITIO WEB DE AMERICAN EXPRESS. SERVICIO AL CLIENTE: POR FAVOR NO RESPONDA (REPLY) ESTE E-MAIL Y DIRIJA TODAS SUS CONSULTAS A SERVICIO AL CLIENTE. DECLARACIÓN SOBRE PRIVACIDAD: PARA SABER CÓMO OBTENEMOS, ASEGURAMOS Y UTILIZAMOS SU INFORMACIÓN PERSONAL CUMPLIENDO CON LA LEY 25.326, VISITE LA DECLARACIÓN SOBRE PRIVACIDAD DE AMERICAN EXPRESS INGRESANDO EN: WWW.AMERICANEXPRESS.COM.AR/PRIVACIDAD
+              <br><br>
+              © 2019 AMERICAN EXPRESS COMPANY.
+            </td>
+          </tr>
+        </table>
+        <table class="small-banner">
+          <tr>
+            <td>
+              <img src="https://i.ibb.co/rH9hvkz/seguros-de-la-nacion.png" alt="Mini Banner" style="float: left; margin-right: 10px;">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
